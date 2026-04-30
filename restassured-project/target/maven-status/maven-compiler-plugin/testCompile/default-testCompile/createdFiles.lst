@@ -1,0 +1,8 @@
+com/myproject/tests/UserOperation.class
+com/myproject/base/BaseClass.class
+com/myproject/utils/ConfigReader.class
+com/myproject/tests/PetStoreTest.class
+com/myproject/utils/JsonReader.class
+com/myproject/endpoints/UserEndpoints.class
+com/myproject/endpoints/PetStoreEndpoints.class
+com/myproject/tests/UserLogin.class
