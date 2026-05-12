@@ -1,17 +1,46 @@
 package com.myproject.utils;
 
+import static io.restassured.RestAssured.put;
+
+import java.util.HashMap;
+
 import org.testng.annotations.DataProvider;
 
 public class DataProviders {
-
-    @DataProvider(name = "userData")
-    public static Object[][] data() {
-        return new Object[][] {
-                { 190, "user19", "New", "User", "New19@test.com", "New123", "9454435373", 19 },
-                { 191, "user20", "Demo", "User", "demo20@test.com", "Demo123", "9363425693", 20 },
-                { 192, "user21", "Test", "User", "Test21@test.com", "Test123", "9343453783", 21 },
-                { 193, "user22", "Demo", "Test", "demo22@test.com", "dummy123", "8746467733", 22 },
-                { 194, "user23", "Dummy", "New", "dummy23@new.com", "Demo123", "9999999999", 23 }
-        };
-    }
+// ✅ Correct — each map in its own row
+@DataProvider(name = "userData")
+public static Object[][] userData() {
+    return new Object[][] {
+        { new HashMap<String, Object>() {{ 
+            put("id", 190); 
+            put("username", "user19");
+            put("firstName", "Dew");
+            put("lastName", "Nser");
+            put("email", "Dew19@test.com");
+            put("password", "Dew123");
+            put("phone", "944365373");
+            put("userStatus", 19);
+        }}},
+        { new HashMap<String, Object>() {{ 
+            put("id", 191); 
+            put("username", "user20");
+            put("firstName", "Net");
+            put("lastName", "Tester");
+            put("email", "Net20@test.com");
+            put("password", "Net123");
+            put("phone", "942435374");
+            put("userStatus", 20);
+        }}},
+        { new HashMap<String, Object>() {{ 
+            put("id", 192); 
+            put("username", "user21");
+            put("firstName", "dummy");
+            put("lastName", "Tester");
+            put("email", "dummy21@test.com");
+            put("password", "dummy123");
+            put("phone", "9426835375");
+            put("userStatus", 21);
+        }}}
+    };
+}
 }

@@ -1,15 +1,12 @@
-
 package com.myproject.tests;
+
 import com.myproject.base.BaseClass;
 import com.myproject.endpoints.Endpoints;
-import com.myproject.utils.DataProviders;
-
+import com.myproject.utils.DataProviderSetup;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -17,27 +14,51 @@ import java.util.Map;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DataproviderTest extends BaseClass {
+public class DataDrivenTest extends BaseClass {
     String UserName;
-    
 
-    @Test(dataProvider = "userData", dataProviderClass = DataProviders.class)
-    public void Postlist(Map<String, Object> user) {
+    @Test(dataProvider = "csvUserData", dataProviderClass = DataProviderSetup.class)
+    public void Postlist(Map<String, String> user) {
+        int expectedStatus = Integer.parseInt(user.get("expectedStatus"));
+        Map<String, Object> requestBody = new HashMap<>();
 
-         List<Map<String, Object>> userList = new ArrayList<>();
-         userList.add(user);  
+        requestBody.put("id",
+               Integer.parseInt(user.get("id")));
+
+        requestBody.put("username",
+                user.get("username"));
+
+        requestBody.put("firstName",
+                user.get("firstName"));
+
+        requestBody.put("lastName",
+                user.get("lastName"));
+
+        requestBody.put("email",
+                user.get("email"));
+
+        requestBody.put("password",
+                user.get("password"));
+
+        requestBody.put("phone",
+                user.get("phone"));
+
+        requestBody.put("userStatus",
+               Integer.parseInt(user.get("userStatus")));
+
         Response response = given()
-        .spec(request)
-                .body(userList)
+                .spec(request)
+                .body(List.of(requestBody))
                 .when()
                 .post(Endpoints.POST_LIST)
                 .then()
+                .statusCode(expectedStatus)
                 .log().all()
                 .extract().response();
-       
+
         response.then()
                 .assertThat()
-                .statusCode(200)
+                .statusCode(expectedStatus)
                 .body(matchesJsonSchemaInClasspath("userResponseSchema.json"));
 
         Response getResponse = given()
@@ -48,20 +69,27 @@ public class DataproviderTest extends BaseClass {
                 .then()
                 .log().all()
                 .extract().response();
-        UserName = getResponse.jsonPath().getString("username");
-        System.out.println("USERNAME : " + UserName);
+        String actualUsername = getResponse.jsonPath().getString("username");
+
+        UserName = actualUsername;
+        int expectednewStatus = Integer.parseInt(user.get("expectedStatus"));
+        System.out.println("ACTUAL USERNAME: " + actualUsername);
+
+        Assert.assertEquals(
+                actualUsername,
+                user.get("username"));
+
         getResponse.then()
                 .assertThat()
-                .statusCode(200)
+                // .statusCode(404)
+                .statusCode(expectednewStatus)
                 .body(matchesJsonSchemaInClasspath("userSchema.json"));
 
-        
     }
 
     @Test
     public void updateUser() {
 
-       
         String updatedUsername = "Random" + System.currentTimeMillis();
         System.out.println("Updated USERNAME : " + updatedUsername);
         Map<String, Object> updatedUser = new HashMap<>();
@@ -81,8 +109,7 @@ public class DataproviderTest extends BaseClass {
                 .assertThat()
                 .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("userResponseSchema.json"));
-        
-        
+
         Response getResponse = given()
                 .spec(request)
                 .pathParam("username", updatedUsername)
@@ -97,7 +124,6 @@ public class DataproviderTest extends BaseClass {
                 .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("userSchema.json"));
 
-        
         Response Deleteresponse = request
                 .header("Content-Type", "application/json")
                 .pathParam("username", updatedUsername)
@@ -122,13 +148,3 @@ public class DataproviderTest extends BaseClass {
     }
 
 }
-
-
-
-
-
-
-
-
-
-

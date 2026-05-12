@@ -1,0 +1,8 @@
+id,username,firstname,lastname,email,password,userStatus,expectedStatus,expectedMessage
+34,Random123,Random,Test,random123@gamil.com,Random@123,23,200,Valid
+35,Test456,Test,Data,test456@gmail.com,Test@456,56,200,Valid
+36,New984,New,Dummy,new984@gmail.com,New@984,84,200,Valid
+37,999999,Random,Test,random123@gamil.com,Random@123,23,404,Invalid
+38,888888,Test,Data,test456@gmail.com,Test@456,56,404,Invalid
+39,777777,New,Dummy,new984@gmail.com,New@984,84,404,Invalid
+40,484848,Dummy,Random,dummyrandom234,dummyr@884,55,404,Invalid

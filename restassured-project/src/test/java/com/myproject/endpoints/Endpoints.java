@@ -14,7 +14,7 @@ public class Endpoints {
 
     // User Endpoints
     public static String LOGIN = "/user/login";
-    public static String POST_LIST = "/user/createWithArray";
+    public static String POST_LIST = "/user/createWithList";
     public static String GET_BY_USERNAME = "/user/{username}";
     public static String UPDATE = "/user/{username}";
     public static String DELETEUSER = "/user/{username}";

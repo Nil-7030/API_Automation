@@ -3,12 +3,12 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.myproject.tests.UserOperation">
+      <class name="com.myproject.tests.NegativeScenarioTest">
         <methods>
-          <include name="updateUser"/>
+          <include name="Postlist"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.myproject.tests.UserOperation -->
+      </class> <!-- com.myproject.tests.NegativeScenarioTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

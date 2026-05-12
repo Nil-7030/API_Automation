@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 public class UserOperation extends BaseClass {
     String UserName;
 
-    @Test(dataProvider = "userData", dataProviderClass = DataProviders.class)
+    @Test()
     public void Postlist() {
 
         List<Map<String, Object>> users = JsonReader.getJsonData("createUsers");
