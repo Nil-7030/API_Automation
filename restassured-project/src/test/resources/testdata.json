@@ -1,5 +1,5 @@
 {
-  "createUsers":[
+  "createUsers": [
     {
       "id": 190,
       "username": "user19",
@@ -21,11 +21,12 @@
       "userStatus": 20
     }
   ],
-  "updateUser":[{
+  "updateUser": [
+    {
       "id": 190,
       "username": "Random190",
       "firstName": "Dummy",
       "lastName": "user"
-      
-  }]
+    }
+  ]
 }

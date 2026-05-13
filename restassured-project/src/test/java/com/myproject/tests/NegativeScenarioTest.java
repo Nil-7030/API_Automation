@@ -17,16 +17,15 @@ import org.testng.annotations.Test;
 public class NegativeScenarioTest extends BaseClass {
     String UserName;
 
- List<Map<String, String>> users = CsvReader.getCsvData(
-                "src/test/resources/users.csv");
+    List<Map<String, String>> users = CsvReader.getCsvData(
+            "src/test/resources/users.csv");
 
     @Test()
     public void Postlist() {
 
        
-        // =========================
         // POSITIVE POST SCENARIOS
-        // =========================
+        
 
         for (int i = 0; i < 3; i++) {
 
@@ -82,9 +81,9 @@ public class NegativeScenarioTest extends BaseClass {
                             + csvUser.get("username"));
         }
 
-        // =========================
+        
         // NEGATIVE GET SCENARIOS
-        // =========================
+        
 
         for (int i = 3; i < users.size(); i++) {
 
@@ -168,6 +167,7 @@ public class NegativeScenarioTest extends BaseClass {
         Assert.assertEquals(userResponse.jsonPath().getString("message"), "User not found");
         System.out.println("User Not Found");
 
+        // Negative Delete Scenario
         Response DeleteInvalidresponse = request
                 .header("Content-Type", "application/json")
                 .pathParam("username", users.get(6).get("username"))

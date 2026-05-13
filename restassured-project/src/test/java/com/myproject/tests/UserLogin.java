@@ -10,8 +10,8 @@ import com.myproject.utils.ConfigReader;
 
 import io.restassured.response.Response;
 
-public class UserLogin  {
-    
+public class UserLogin {
+
     public String userLogin() {
 
         Response response = given()

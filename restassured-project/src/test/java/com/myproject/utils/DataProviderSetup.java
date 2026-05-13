@@ -10,10 +10,8 @@ public class DataProviderSetup {
     @DataProvider(name = "csvUserData")
     public Object[] getCsvData() {
 
-        List<Map<String, String>> users =
-                CsvReader.getCsvData(
-                    "src/test/resources/users.csv"
-                );
+        List<Map<String, String>> users = CsvReader.getCsvData(
+                "src/test/resources/users.csv");
 
         return users.toArray();
     }
