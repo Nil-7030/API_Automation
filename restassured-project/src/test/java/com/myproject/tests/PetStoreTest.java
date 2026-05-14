@@ -52,7 +52,7 @@ public class PetStoreTest extends BaseClass {
 
         getResponse.then().log().all();
         String actualName = getResponse.jsonPath().getString("name");
-        String expectedName = ConfigReader.getProperty("initial.name");
+        String expectedName = ConfigReader.get("initial.name");
         Assert.assertEquals(actualName, expectedName);
 
         // STEP 3: PUT (Update full pet)
@@ -65,7 +65,7 @@ public class PetStoreTest extends BaseClass {
         Response putResponse = putRequest(Endpoints.UPDATE, updateBody);
         putResponse.then().log().all();
         String UpdatedName = putResponse.jsonPath().getString("name");
-        String expUpName = ConfigReader.getProperty("updated.name");
+        String expUpName = ConfigReader.get("updated.name");
         Assert.assertEquals(UpdatedName, expUpName);
 
         // STEP 4: POST (Update using form data)
