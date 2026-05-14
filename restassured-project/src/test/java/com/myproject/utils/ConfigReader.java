@@ -1,34 +1,43 @@
 package com.myproject.utils;
 
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigReader {
 
-    private static Properties properties = new Properties();
+    private static Properties prop =
+            new Properties();
 
     static {
+
         try {
-            // Try to load from project root first
-            FileInputStream file = new FileInputStream(".env");
-            properties.load(file);
-            file.close();
-        } catch (IOException e) {
-            // If not found in project root, try to load as resource
-            try {
-                properties.load(ConfigReader.class.getClassLoader().getResourceAsStream(".env"));
-            } catch (Exception ex) {
-                throw new RuntimeException("Failed to load .env file from project root or resources");
-            }
+
+            FileInputStream fis =
+                new FileInputStream(
+                    "src/test/resources/config/qa.properties");
+
+            prop.load(fis);
+
+        } catch (Exception e) {
+
+            System.out.println(
+                "Properties file not found. "
+                + "Using Jenkins environment variables.");
         }
     }
 
-    public static String get(String key) {
-        return properties.getProperty(key);
-    }
+    public static String get(
+            String key) {
 
-    public static String getProperty(String key) {
-        return get(key);
+        String envValue =
+                System.getenv(key);
+
+        if (envValue != null
+                && !envValue.isEmpty()) {
+
+            return envValue;
+        }
+
+        return prop.getProperty(key);
     }
 }

@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 import java.util.Map;
 
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
+
 
 import com.myproject.tests.UserLogin;
 import com.myproject.utils.ConfigReader;
