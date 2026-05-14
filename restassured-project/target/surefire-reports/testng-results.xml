@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-14T11:14:39 IST" name="API Suite" finished-at="2026-05-14T11:16:37 IST" duration-ms="118416">
+    <groups>
+    </groups>
+    <test started-at="2026-05-14T11:14:39 IST" name="Test" finished-at="2026-05-14T11:16:37 IST" duration-ms="118416">
+      <class name="com.myproject.tests.DataproviderTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.myproject.tests.DataproviderTest@796065aa]" started-at="2026-05-14T11:15:09 IST" name="setup" finished-at="2026-05-14T11:15:11 IST" duration-ms="1650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Postlist(java.util.Map)[pri:0, instance:com.myproject.tests.DataproviderTest@796065aa]" started-at="2026-05-14T11:15:11 IST" name="Postlist" data-provider="userData" finished-at="2026-05-14T11:15:23 IST" duration-ms="11728" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Dew, lastName=Nser, password=Dew123, userStatus=19, phone=944365373, id=190, email=Dew19@test.com, username=user19}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Postlist -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.myproject.tests.DataproviderTest@796065aa]" started-at="2026-05-14T11:15:23 IST" name="setup" finished-at="2026-05-14T11:15:24 IST" duration-ms="1538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Postlist(java.util.Map)[pri:0, instance:com.myproject.tests.DataproviderTest@796065aa]" started-at="2026-05-14T11:15:24 IST" name="Postlist" data-provider="userData" finished-at="2026-05-14T11:15:32 IST" duration-ms="8089" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Net, lastName=Tester, password=Net123, userStatus=20, phone=942435374, id=191, email=Net20@test.com, username=user20}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Postlist -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.myproject.tests.DataproviderTest@796065aa]" started-at="2026-05-14T11:15:32 IST" name="setup" finished-at="2026-05-14T11:15:34 IST" duration-ms="1511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Postlist(java.util.Map)[pri:0, instance:com.myproject.tests.DataproviderTest@796065aa]" started-at="2026-05-14T11:15:34 IST" name="Postlist" data-provider="userData" finished-at="2026-05-14T11:15:37 IST" duration-ms="2933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=dummy, lastName=Tester, password=dummy123, userStatus=21, phone=9426835375, id=192, email=dummy21@test.com, username=user21}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Postlist -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.myproject.tests.DataproviderTest@796065aa]" started-at="2026-05-14T11:15:37 IST" name="setup" finished-at="2026-05-14T11:15:38 IST" duration-ms="1491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateUser()[pri:0, instance:com.myproject.tests.DataproviderTest@796065aa]" started-at="2026-05-14T11:15:38 IST" name="updateUser" finished-at="2026-05-14T11:15:49 IST" duration-ms="10785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+      </class> <!-- com.myproject.tests.DataproviderTest -->
+      <class name="com.myproject.tests.NegativeScenarioTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.myproject.tests.NegativeScenarioTest@28a6301f]" started-at="2026-05-14T11:15:49 IST" name="setup" finished-at="2026-05-14T11:15:50 IST" duration-ms="1567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Postlist()[pri:0, instance:com.myproject.tests.NegativeScenarioTest@28a6301f]" started-at="2026-05-14T11:15:50 IST" name="Postlist" finished-at="2026-05-14T11:16:06 IST" duration-ms="15384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Postlist -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.myproject.tests.NegativeScenarioTest@28a6301f]" started-at="2026-05-14T11:16:06 IST" name="setup" finished-at="2026-05-14T11:16:07 IST" duration-ms="1511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateUser()[pri:0, instance:com.myproject.tests.NegativeScenarioTest@28a6301f]" started-at="2026-05-14T11:16:07 IST" name="updateUser" finished-at="2026-05-14T11:16:20 IST" duration-ms="12608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+      </class> <!-- com.myproject.tests.NegativeScenarioTest -->
+      <class name="com.myproject.tests.DataDrivenTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.myproject.tests.DataDrivenTest@7573e12f]" started-at="2026-05-14T11:14:39 IST" name="setup" finished-at="2026-05-14T11:14:42 IST" duration-ms="2977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Postlist()[pri:0, instance:com.myproject.tests.DataDrivenTest@7573e12f]" started-at="2026-05-14T11:14:42 IST" name="Postlist" finished-at="2026-05-14T11:14:56 IST" duration-ms="14622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Postlist -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.myproject.tests.DataDrivenTest@7573e12f]" started-at="2026-05-14T11:14:56 IST" name="setup" finished-at="2026-05-14T11:14:58 IST" duration-ms="1510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateUser()[pri:0, instance:com.myproject.tests.DataDrivenTest@7573e12f]" started-at="2026-05-14T11:14:58 IST" name="updateUser" finished-at="2026-05-14T11:15:09 IST" duration-ms="11168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+      </class> <!-- com.myproject.tests.DataDrivenTest -->
+      <class name="com.myproject.tests.UserOperation">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.myproject.tests.UserOperation@2c306a57]" started-at="2026-05-14T11:16:20 IST" name="setup" finished-at="2026-05-14T11:16:22 IST" duration-ms="1546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Postlist()[pri:0, instance:com.myproject.tests.UserOperation@2c306a57]" started-at="2026-05-14T11:16:22 IST" name="Postlist" finished-at="2026-05-14T11:16:30 IST" duration-ms="8192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Postlist -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.myproject.tests.UserOperation@2c306a57]" started-at="2026-05-14T11:16:30 IST" name="setup" finished-at="2026-05-14T11:16:31 IST" duration-ms="1629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="updateUser()[pri:0, instance:com.myproject.tests.UserOperation@2c306a57]" started-at="2026-05-14T11:16:31 IST" name="updateUser" finished-at="2026-05-14T11:16:37 IST" duration-ms="5838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+      </class> <!-- com.myproject.tests.UserOperation -->
+    </test> <!-- Test -->
+  </suite> <!-- API Suite -->
+</testng-results>

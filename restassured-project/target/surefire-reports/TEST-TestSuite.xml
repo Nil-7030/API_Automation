@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="124.068" tests="10" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="20"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/test-classes:/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/classes:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/nileshrajendrabehare/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/nileshrajendrabehare/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/nileshrajendrabehare/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/nileshrajendrabehare/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/nileshrajendrabehare/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/nileshrajendrabehare/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/nileshrajendrabehare/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/json-schema-validator/5.3.0/json-schema-validator-5.3.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/nileshrajendrabehare/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/nileshrajendrabehare/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/nileshrajendrabehare/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/nileshrajendrabehare/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/nileshrajendrabehare/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/nileshrajendrabehare/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-testng/2.27.0/allure-testng-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-java-commons/2.27.0/allure-java-commons-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-model/2.27.0/allure-model-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-test-filter/2.27.0/allure-test-filter-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/opencsv/opencsv/5.9/opencsv-5.9.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/Users/nileshrajendrabehare/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/nileshrajendrabehare/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="20"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/surefire/surefirebooter-20260514111438239_3.jar /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/surefire 2026-05-14T11-14-38_188-jvmRun1 surefire-20260514111438239_1tmp surefire_0-20260514111438239_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/test-classes:/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/classes:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/nileshrajendrabehare/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/nileshrajendrabehare/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/nileshrajendrabehare/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/nileshrajendrabehare/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/nileshrajendrabehare/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/nileshrajendrabehare/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/nileshrajendrabehare/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/json-schema-validator/5.3.0/json-schema-validator-5.3.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/nileshrajendrabehare/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/nileshrajendrabehare/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/nileshrajendrabehare/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/nileshrajendrabehare/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/nileshrajendrabehare/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/nileshrajendrabehare/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-testng/2.27.0/allure-testng-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-java-commons/2.27.0/allure-java-commons-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-model/2.27.0/allure-model-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-test-filter/2.27.0/allure-test-filter-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/opencsv/opencsv/5.9/opencsv-5.9.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/Users/nileshrajendrabehare/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/nileshrajendrabehare/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/nileshrajendrabehare"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/surefire/surefirebooter-20260514111438239_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="20.0.2+9-78"/>
+    <property name="user.name" value="nileshrajendrabehare"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.3.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/nileshrajendrabehare/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/gd/rybvn59d6ks17ghjh8z1927c0000gn/T/"/>
+    <property name="java.version" value="20.0.2"/>
+    <property name="user.dir" value="/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/nileshrajendrabehare/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="20.0.2+9-78"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="64.0"/>
+  </properties>
+  <testcase name="Postlist" classname="com.myproject.tests.DataDrivenTest" time="14.634">
+    <system-out><![CDATA[11:14:38.870 [main] DEBUG org.testng.TestNG -- suiteXmlPath: "/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/testng.xml"
+Generated Token: 1778737481625
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:44:48 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "ok"
+}
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:44:50 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 35,
+    "username": "BCA321",
+    "email": "test456@gmail.com",
+    "password": "Test@456",
+    "userStatus": 56
+}
+ACTUAL USERNAME: BCA321
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:44:52 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "ok"
+}
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:44:53 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 35,
+    "username": "BCA321",
+    "email": "test456@gmail.com",
+    "password": "Test@456",
+    "userStatus": 56
+}
+ACTUAL USERNAME: BCA321
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:44:55 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "ok"
+}
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:44:56 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 35,
+    "username": "BCA321",
+    "email": "test456@gmail.com",
+    "password": "Test@456",
+    "userStatus": 56
+}
+ACTUAL USERNAME: BCA321
+]]></system-out>
+  </testcase>
+  <testcase name="updateUser" classname="com.myproject.tests.DataDrivenTest" time="11.167">
+    <system-out><![CDATA[Generated Token: 1778737498316
+Updated USERNAME : Random1778737503458
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:45:04 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "9223372036854763735"
+}
+User updated successfully
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:45:06 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 9223372036854763735,
+    "username": "Random1778737503458",
+    "userStatus": 0
+}
+User is Succesfully Deleted
+HTTP/1.1 404 Not Found
+Date: Thu, 14 May 2026 05:45:09 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+User Not Found
+]]></system-out>
+  </testcase>
+  <testcase name="Postlist[{firstName=Dew, lastName=Nser, password=Dew123, userStatus=19, phone=944365373, id=190, email=Dew19@test.com, username=user19}](1)" classname="com.myproject.tests.DataproviderTest" time="11.729">
+    <system-out><![CDATA[Generated Token: 1778737511086
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:45:21 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "ok"
+}
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:45:22 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 190,
+    "username": "user19",
+    "firstName": "Dew",
+    "lastName": "Nser",
+    "email": "Dew19@test.com",
+    "password": "Dew123",
+    "phone": "944365373",
+    "userStatus": 19
+}
+USERNAME : user19
+]]></system-out>
+  </testcase>
+  <testcase name="Postlist[{firstName=Net, lastName=Tester, password=Net123, userStatus=20, phone=942435374, id=191, email=Net20@test.com, username=user20}](2)" classname="com.myproject.tests.DataproviderTest" time="8.088">
+    <system-out><![CDATA[Generated Token: 1778737524391
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:45:30 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "ok"
+}
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:45:32 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 191,
+    "username": "user20",
+    "firstName": "Net",
+    "lastName": "Tester",
+    "email": "Net20@test.com",
+    "password": "Net123",
+    "phone": "942435374",
+    "userStatus": 20
+}
+USERNAME : user20
+]]></system-out>
+  </testcase>
+  <testcase name="Postlist[{firstName=dummy, lastName=Tester, password=dummy123, userStatus=21, phone=9426835375, id=192, email=dummy21@test.com, username=user21}](3)" classname="com.myproject.tests.DataproviderTest" time="2.933">
+    <system-out><![CDATA[Generated Token: 1778737534021
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:45:35 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "ok"
+}
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:45:36 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 192,
+    "username": "user21",
+    "firstName": "dummy",
+    "lastName": "Tester",
+    "email": "dummy21@test.com",
+    "password": "dummy123",
+    "phone": "9426835375",
+    "userStatus": 21
+}
+USERNAME : user21
+]]></system-out>
+  </testcase>
+  <testcase name="updateUser" classname="com.myproject.tests.DataproviderTest" time="10.786">
+    <system-out><![CDATA[Generated Token: 1778737538361
+Updated USERNAME : Random1778737543605
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:45:44 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "9223372036854763740"
+}
+User updated successfully
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:45:46 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 9223372036854763740,
+    "username": "Random1778737543605",
+    "userStatus": 0
+}
+User is Succesfully Deleted
+HTTP/1.1 404 Not Found
+Date: Thu, 14 May 2026 05:45:49 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+User Not Found
+]]></system-out>
+  </testcase>
+  <testcase name="Postlist" classname="com.myproject.tests.NegativeScenarioTest" time="15.387">
+    <system-out><![CDATA[Generated Token: 1778737550816
+POST Success for: ABC123
+POST Success for: BCA321
+POST Success for: CBA111
+Negative Username: 63637
+HTTP/1.1 404 Not Found
+Date: Thu, 14 May 2026 05:46:01 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+GET Negative validated for: 63637
+Negative Username: 36373
+HTTP/1.1 404 Not Found
+Date: Thu, 14 May 2026 05:46:03 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+GET Negative validated for: 36373
+Negative Username: 35367
+HTTP/1.1 404 Not Found
+Date: Thu, 14 May 2026 05:46:04 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+GET Negative validated for: 35367
+Negative Username: 552829
+HTTP/1.1 404 Not Found
+Date: Thu, 14 May 2026 05:46:06 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+GET Negative validated for: 552829
+]]></system-out>
+  </testcase>
+  <testcase name="updateUser" classname="com.myproject.tests.NegativeScenarioTest" time="12.609">
+    <system-out><![CDATA[Generated Token: 1778737567672
+Updated USERNAME : Random1778737572862
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:46:14 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "9223372036854763740"
+}
+User updated successfully
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:46:15 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 9223372036854763740,
+    "username": "Random1778737572862",
+    "userStatus": 0
+}
+User is Succesfully Deleted
+HTTP/1.1 404 Not Found
+Date: Thu, 14 May 2026 05:46:18 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+User Not Found
+User is Not Found for Deletion
+]]></system-out>
+  </testcase>
+  <testcase name="Postlist" classname="com.myproject.tests.UserOperation" time="8.19">
+    <system-out><![CDATA[Generated Token: 1778737581808
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:46:28 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "ok"
+}
+UserID : null
+Headers validated successfully
+No cookies found
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:46:30 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 134,
+    "username": "user34",
+    "firstName": "New",
+    "lastName": "User",
+    "email": "New134@test.com",
+    "password": "New123",
+    "phone": "9890959931",
+    "userStatus": 19
+}
+USERNAME : user34
+]]></system-out>
+  </testcase>
+  <testcase name="updateUser" classname="com.myproject.tests.UserOperation" time="5.837">
+    <system-out><![CDATA[Generated Token: 1778737591672
+Updated USERNAME : Random1778737591844
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:46:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "9223372036854763741"
+}
+User updated successfully
+HTTP/1.1 200 OK
+Date: Thu, 14 May 2026 05:46:34 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 9223372036854763741,
+    "username": "Random1778737591844",
+    "userStatus": 0
+}
+User is Succesfully Deleted
+HTTP/1.1 404 Not Found
+Date: Thu, 14 May 2026 05:46:37 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+User Not Found
+]]></system-out>
+  </testcase>
+</testsuite>

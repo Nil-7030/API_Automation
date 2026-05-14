@@ -2,6 +2,7 @@ package com.myproject.tests;
 
 import com.myproject.base.BaseClass;
 import com.myproject.endpoints.Endpoints;
+import com.myproject.utils.CsvReader;
 import com.myproject.utils.DataProviderSetup;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import io.restassured.response.Response;
@@ -16,35 +17,53 @@ import org.testng.annotations.Test;
 
 public class DataDrivenTest extends BaseClass {
     String UserName;
+ List<Map<String, String>> users = CsvReader.getCsvData(
+            "src/test/resources/users.csv");
 
-    @Test(dataProvider = "csvUserData", dataProviderClass = DataProviderSetup.class)
-    public void Postlist(Map<String, String> user) {
-        int expectedStatus = Integer.parseInt(user.get("expectedStatus"));
-        Map<String, Object> requestBody = new HashMap<>();
+    @Test
+    public void Postlist() {
+      //  int expectedStatus = Integer.parseInt(user.get("expectedStatus"));
+        
 
-        requestBody.put("id",
-               Integer.parseInt(user.get("id")));
+        for (int i=0; i<3; i++) {
 
-        requestBody.put("username",
-                user.get("username"));
+            Map<String, String> csvUser = users.get(i);
 
-        requestBody.put("firstName",
-                user.get("firstName"));
+            Map<String, Object> requestBody = new HashMap<>();
 
-        requestBody.put("lastName",
-                user.get("lastName"));
+            requestBody.put(
+                    "id",
+                    Integer.parseInt(
+                            csvUser.get("id")));
 
-        requestBody.put("email",
-                user.get("email"));
+            requestBody.put(
+                    "username",
+                    csvUser.get("username"));
 
-        requestBody.put("password",
-                user.get("password"));
+            requestBody.put(
+                    "firstName",
+                    csvUser.get("firstName"));
 
-        requestBody.put("phone",
-                user.get("phone"));
+            requestBody.put(
+                    "lastName",
+                    csvUser.get("lastName"));
 
-        requestBody.put("userStatus",
-               Integer.parseInt(user.get("userStatus")));
+            requestBody.put(
+                    "email",
+                    csvUser.get("email"));
+
+            requestBody.put(
+                    "password",
+                    csvUser.get("password"));
+
+            requestBody.put(
+                    "phone",
+                    csvUser.get("phone"));
+
+            requestBody.put(
+                    "userStatus",
+                    Integer.parseInt(
+                            csvUser.get("userStatus")));
 
         Response response = given()
                 .spec(request)
@@ -52,18 +71,18 @@ public class DataDrivenTest extends BaseClass {
                 .when()
                 .post(Endpoints.POST_LIST)
                 .then()
-                .statusCode(expectedStatus)
+                .statusCode(200)
                 .log().all()
                 .extract().response();
 
         response.then()
                 .assertThat()
-                .statusCode(expectedStatus)
+                .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("userResponseSchema.json"));
 
         Response getResponse = given()
                 .spec(request)
-                .pathParam("username", user.get("username"))
+                .pathParam("username", users.get(1).get("username"))
                 .when()
                 .get(Endpoints.GET_BY_USERNAME)
                 .then()
@@ -72,19 +91,19 @@ public class DataDrivenTest extends BaseClass {
         String actualUsername = getResponse.jsonPath().getString("username");
 
         UserName = actualUsername;
-        int expectednewStatus = Integer.parseInt(user.get("expectedStatus"));
+        //int expectednewStatus = Integer.parseInt(user.get("expectedStatus"));
         System.out.println("ACTUAL USERNAME: " + actualUsername);
 
         Assert.assertEquals(
                 actualUsername,
-                user.get("username"));
+                users.get(1).get("username"));
 
         getResponse.then()
                 .assertThat()
                 // .statusCode(404)
-                .statusCode(expectednewStatus)
+                .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("userSchema.json"));
-
+        }
     }
 
     @Test

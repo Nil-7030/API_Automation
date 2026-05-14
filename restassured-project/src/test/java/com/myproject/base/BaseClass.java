@@ -7,7 +7,7 @@ import static io.restassured.RestAssured.given;
 
 import java.util.Map;
 
-
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 import com.myproject.tests.UserLogin;
@@ -18,7 +18,7 @@ public class BaseClass {
     protected RequestSpecification request;
     public static String token;
 
-    @BeforeSuite
+    @BeforeMethod
     public void setup() {
 
         request = given()
@@ -35,7 +35,7 @@ public class BaseClass {
                 .header("Content-Type", "application/json");
     }
 
-    public Response getWithPathParam(String endpoint, Object pathParam) {
+     public Response getWithPathParam(String endpoint, Object pathParam) {
         return given()
                 .header("Content-Type", "application/json")
                 .pathParam("petId", pathParam)
@@ -77,6 +77,6 @@ public class BaseClass {
                 .pathParam("petId", pathParam)
                 .when()
                 .delete(endpoint);
-    }
+    } 
 
 }

@@ -1,21 +1,21 @@
 {
   "createUsers": [
     {
-      "id": 190,
-      "username": "user19",
+      "id": 134,
+      "username": "user34",
       "firstName": "New",
       "lastName": "User",
-      "email": "New19@test.com",
+      "email": "New134@test.com",
       "password": "New123",
       "phone": "9890959931",
       "userStatus": 19
     },
     {
-      "id": 120,
-      "username": "user20",
+      "id": 124,
+      "username": "user12",
       "firstName": "Demo",
       "lastName": "QA",
-      "email": "Demo20@test.com",
+      "email": "Demo124@test.com",
       "password": "Demo123",
       "phone": "989647492",
       "userStatus": 20
@@ -23,10 +23,10 @@
   ],
   "updateUser": [
     {
-      "id": 190,
-      "username": "Random190",
-      "firstName": "Dummy",
-      "lastName": "user"
+      "id": 134,
+      "username": "user34",
+      "firstName": "New",
+      "lastName": "User"
     }
   ]
 }

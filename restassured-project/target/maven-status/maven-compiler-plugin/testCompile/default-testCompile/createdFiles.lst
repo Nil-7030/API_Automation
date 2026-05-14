@@ -12,5 +12,6 @@ com/myproject/tests/NegativeScenarioTest.class
 com/myproject/utils/ConfigReader.class
 com/myproject/tests/PetStoreTest.class
 com/myproject/utils/JsonReader.class
+com/myproject/utils/ResponseValidator.class
 com/myproject/utils/DataProviders$1.class
 com/myproject/tests/DataproviderTest.class

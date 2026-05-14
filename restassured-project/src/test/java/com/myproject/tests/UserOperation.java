@@ -2,14 +2,16 @@ package com.myproject.tests;
 
 import com.myproject.base.BaseClass;
 import com.myproject.endpoints.Endpoints;
-import com.myproject.utils.DataProviders;
+
 import com.myproject.utils.JsonReader;
 import com.myproject.utils.ResponseValidator;
 
+import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+import static org.hamcrest.Matchers.lessThan;
 import io.restassured.response.Response;
 
-import static io.restassured.RestAssured.given;
+
 
 import java.util.HashMap;
 import java.util.List;
@@ -25,8 +27,8 @@ public class UserOperation extends BaseClass {
         public void Postlist() {
 
                 List<Map<String, Object>> users = JsonReader.getJsonData("createUsers");
-                Response response = request
-                                .given()
+                Response response = given()
+                                .spec(request)
                                 .body(users)
                                 .when()
                                 .post(Endpoints.POST_LIST)
@@ -44,12 +46,14 @@ public class UserOperation extends BaseClass {
                                 .assertThat()
                                // .header("Content-Type", "application/json")
                                 .statusCode(200)
+                                
                                // .cookie("JSESSIONID")
-                                .body(matchesJsonSchemaInClasspath("userResponseSchema.json"));
+                                .body(matchesJsonSchemaInClasspath("userResponseSchema.json"))
+                                .time(lessThan(6000L));
                 //Assert.assertEquals(response.getHeader("Connection"), "keep-alive");
                // Assert.assertEquals(response.getHeader("Server"), "Jetty(9.2.9.v20150224)");
-                Response getResponse = request
-                                .given()
+                Response getResponse =given()
+                                .spec(request) 
                                 .pathParam("username", users.get(0).get("username"))
                                 .when()
                                 .get(Endpoints.GET_BY_USERNAME)
@@ -80,8 +84,8 @@ public class UserOperation extends BaseClass {
                 Map<String, Object> updatedUser = new HashMap<>();
                 updatedUser.put("username", updatedUsername);
 
-                Response response = request
-                                .given()
+                Response response = given()
+                                .spec(request)
                                 .pathParam("username", UserName)
                                 .body(updatedUser)
                                 .when()
@@ -98,8 +102,8 @@ public class UserOperation extends BaseClass {
 
                 // Verify the updated user by retrieving it
                 // System.out.println(updatedUsername,"updatedUsername");
-                Response getResponse = request
-                                .given()
+                Response getResponse = given()
+                                .spec(request)
                                 .pathParam("username", updatedUsername)
                                 .when()
                                 .get(Endpoints.GET_BY_USERNAME)
@@ -116,9 +120,8 @@ public class UserOperation extends BaseClass {
                 // Assert.assertEquals(getResponse.jsonPath().getString("username"),
                 // updatedUsername);
 
-                Response Deleteresponse = request
-                                .given()
-                                .header("Content-Type", "application/json")
+                Response Deleteresponse = given()
+                                .spec(request)
                                 .pathParam("username", updatedUsername)
                                 .when()
                                 .delete(Endpoints.DELETEUSER);
@@ -128,8 +131,8 @@ public class UserOperation extends BaseClass {
                                 .statusCode(200)
                                 .body(matchesJsonSchemaInClasspath("userResponseSchema.json"));
 
-                Response userResponse = request
-                                .given()
+                Response userResponse = given()
+                                .spec(request)
                                 .pathParam("username", updatedUsername)
                                 .when()
                                 .get(Endpoints.GET_BY_USERNAME)

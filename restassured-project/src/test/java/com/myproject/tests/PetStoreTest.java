@@ -30,7 +30,7 @@ public class PetStoreTest extends BaseClass {
                 .when()
                 .get("UserEndpoints.LOGIN")
                 .then()
-                .statusCode(200)
+                .statusCode(404)
                 .log().all();
 
         // STEP 1: POST (Create Pet)

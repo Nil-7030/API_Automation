@@ -94,7 +94,8 @@ public class DataproviderTest extends BaseClass {
                                 .statusCode(200)
                                 .body(matchesJsonSchemaInClasspath("userSchema.json"));
 
-                Response Deleteresponse = request
+                Response Deleteresponse = given()
+                                .spec(request)
                                 .header("Content-Type", "application/json")
                                 .pathParam("username", updatedUsername)
                                 .when()
@@ -105,7 +106,8 @@ public class DataproviderTest extends BaseClass {
                                 .statusCode(200)
                                 .body(matchesJsonSchemaInClasspath("userResponseSchema.json"));
 
-                Response userResponse = request
+                Response userResponse = given()
+                                .spec(request)
                                 .pathParam("username", updatedUsername)
                                 .when()
                                 .get(Endpoints.GET_BY_USERNAME)

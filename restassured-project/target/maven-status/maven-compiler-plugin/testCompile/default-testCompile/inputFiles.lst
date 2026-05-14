@@ -11,3 +11,4 @@
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/utils/DataProviderSetup.java
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/utils/DataProviders.java
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/utils/JsonReader.java
+/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/utils/ResponseValidator.java
