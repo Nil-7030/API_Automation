@@ -11,8 +11,6 @@ import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInC
 import static org.hamcrest.Matchers.lessThan;
 import io.restassured.response.Response;
 
-
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -35,25 +33,25 @@ public class UserOperation extends BaseClass {
                                 .then()
                                 .log().all()
                                 .extract().response();
-               // Map<String, String> cookies = response.getCookies();
-               // System.out.println("Cookies: " + cookies);
+                // Map<String, String> cookies = response.getCookies();
+                // System.out.println("Cookies: " + cookies);
                 String userId = response.jsonPath().getString("id");
                 System.out.println("UserID : " + userId);
-                 ResponseValidator.validateHeaders(response);
-                 ResponseValidator.validateCookies(response);
+                ResponseValidator.validateHeaders(response);
+                ResponseValidator.validateCookies(response);
 
                 response.then()
                                 .assertThat()
-                               // .header("Content-Type", "application/json")
+                                // .header("Content-Type", "application/json")
                                 .statusCode(200)
-                                
-                               // .cookie("JSESSIONID")
+
+                                // .cookie("JSESSIONID")
                                 .body(matchesJsonSchemaInClasspath("userResponseSchema.json"))
                                 .time(lessThan(6000L));
-                //Assert.assertEquals(response.getHeader("Connection"), "keep-alive");
-               // Assert.assertEquals(response.getHeader("Server"), "Jetty(9.2.9.v20150224)");
-                Response getResponse =given()
-                                .spec(request) 
+                // Assert.assertEquals(response.getHeader("Connection"), "keep-alive");
+                // Assert.assertEquals(response.getHeader("Server"), "Jetty(9.2.9.v20150224)");
+                Response getResponse = given()
+                                .spec(request)
                                 .pathParam("username", users.get(0).get("username"))
                                 .when()
                                 .get(Endpoints.GET_BY_USERNAME)

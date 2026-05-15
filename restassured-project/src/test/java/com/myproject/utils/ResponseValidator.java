@@ -21,24 +21,23 @@ public class ResponseValidator {
         System.out.println(
                 "Headers validated successfully");
     }
-    
-    public static void validateCookies(Response response) {
-       
-        String sessionCookie =
-                response.getCookie(
-                        "JSESSIONID");
 
-        if(sessionCookie != null) {
+    public static void validateCookies(Response response) {
+
+        String sessionCookie = response.getCookie(
+                "JSESSIONID");
+
+        if (sessionCookie != null) {
 
             System.out.println(
                     "Cookie validated: "
-                    + sessionCookie);
+                            + sessionCookie);
 
         } else {
 
             System.out.println(
                     "No cookies found");
         }
-    
-}
+
+    }
 }
