@@ -1,14 +1,17 @@
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/base/BaseClass.java
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/endpoints/Endpoints.java
+/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/pojo/User.java
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/tests/DataDrivenTest.java
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/tests/DataproviderTest.java
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/tests/NegativeScenarioTest.java
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/tests/PetStoreTest.java
+/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/tests/PojoTest.java
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/tests/UserLogin.java
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/tests/UserOperation.java
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/utils/ConfigReader.java
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/utils/CsvReader.java
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/utils/DataProviderSetup.java
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/utils/DataProviders.java
+/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/utils/EnvManager.java
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/utils/JsonReader.java
 /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/src/test/java/com/myproject/utils/ResponseValidator.java

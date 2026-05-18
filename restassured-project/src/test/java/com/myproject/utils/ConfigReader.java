@@ -12,11 +12,25 @@ public class ConfigReader {
 
         try {
 
+            String env =
+                    System.getProperty("env");
+
+            if (env == null || env.isEmpty()) {
+
+                env = "prod";
+            }
+
+            String filePath =
+                    "src/test/resources/config/"
+                    + env + ".properties";
+
             FileInputStream fis =
-                new FileInputStream(
-                    "src/test/resources/config/qa.properties");
+                    new FileInputStream(filePath);
 
             prop.load(fis);
+
+            System.out.println(
+                    "Loaded Environment: " + env);
 
         } catch (Exception e) {
 
@@ -26,8 +40,7 @@ public class ConfigReader {
         }
     }
 
-    public static String get(
-            String key) {
+    public static String get(String key) {
 
         String envValue =
                 System.getenv(key);
