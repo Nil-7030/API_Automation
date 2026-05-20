@@ -1,16 +1,12 @@
 package com.myproject.base;
 
 import static io.restassured.RestAssured.given;
-
 import java.util.Map;
-
 import org.testng.annotations.BeforeMethod;
-
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-
 import com.myproject.tests.UserLogin;
-import com.myproject.utils.ConfigReader;
+import com.myproject.utils.EnvManager;
 
 
 public class BaseClass {
@@ -23,16 +19,22 @@ public class BaseClass {
 
         @BeforeMethod
         public void setup() {
+                   
+            EnvManager.loadEnv();
 
+        System.out.println(
+                "BASE_URL => "
+                + EnvManager.get("BASE_URL"));    
                 
                 // Generate Token
                 token = new UserLogin().userLogin();
 
                 System.out.println( "Generated Token: " + token);
-
+                       
                 // Common Request Specification
                 request = given()
-                                .baseUri(ConfigReader.get("BASE_URL"))
+                                 
+                                .baseUri(EnvManager.get("BASE_URL"))
                                 .header("Authorization", "Bearer " + token)
                                 .header("Content-Type", "application/json")
                                 .header("Accept", "application/json");

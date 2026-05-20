@@ -1,13 +1,8 @@
 package com.myproject.tests;
 
 import static io.restassured.RestAssured.given;
-
-import org.testng.annotations.Test;
-
-import com.myproject.base.BaseClass;
 import com.myproject.endpoints.Endpoints;
-import com.myproject.utils.ConfigReader;
-
+import com.myproject.utils.EnvManager;
 import io.restassured.response.Response;
 
 public class UserLogin {
@@ -15,9 +10,9 @@ public class UserLogin {
     public String userLogin() {
 
         Response response = given()
-                .baseUri(ConfigReader.get("BASE_URL"))
-                .queryParam("username", ConfigReader.get("USERNAME"))
-                .queryParam("password", ConfigReader.get("PASSWORD"))
+                .baseUri(EnvManager.get("BASE_URL"))
+                .queryParam("username", EnvManager.get("USERNAME"))
+                .queryParam("password", EnvManager.get("PASSWORD"))
                 .when()
                 .get(Endpoints.LOGIN)
                 .then()

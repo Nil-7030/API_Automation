@@ -24,7 +24,6 @@ public class PojoTest extends BaseClass {
 
     @Test
     public void Postlist() {
-        
 
         for (int i = 0; i < 3; i++) {
 

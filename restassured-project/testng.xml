@@ -12,6 +12,9 @@
             <class name="com.myproject.tests.DataproviderTest"/>
             <class name="com.myproject.tests.NegativeScenarioTest"/>
             <class name="com.myproject.tests.UserOperation"/>
+            <class name="com.myproject.tests.PojoTest"/>
+            
+
             
             
 

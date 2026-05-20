@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="123.809" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="143.236" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="20"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/test-classes:/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/classes:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/nileshrajendrabehare/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/nileshrajendrabehare/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/nileshrajendrabehare/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/nileshrajendrabehare/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/nileshrajendrabehare/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/nileshrajendrabehare/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/nileshrajendrabehare/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/json-schema-validator/5.3.0/json-schema-validator-5.3.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/nileshrajendrabehare/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/nileshrajendrabehare/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/nileshrajendrabehare/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/nileshrajendrabehare/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/nileshrajendrabehare/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/nileshrajendrabehare/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-testng/2.27.0/allure-testng-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-java-commons/2.27.0/allure-java-commons-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-model/2.27.0/allure-model-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-test-filter/2.27.0/allure-test-filter-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/opencsv/opencsv/5.9/opencsv-5.9.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/Users/nileshrajendrabehare/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/nileshrajendrabehare/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:"/>
+    <property name="java.class.path" value="/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/test-classes:/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/classes:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/nileshrajendrabehare/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/nileshrajendrabehare/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/nileshrajendrabehare/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/nileshrajendrabehare/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/nileshrajendrabehare/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/nileshrajendrabehare/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/nileshrajendrabehare/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/json-schema-validator/5.3.0/json-schema-validator-5.3.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/nileshrajendrabehare/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/nileshrajendrabehare/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/nileshrajendrabehare/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/nileshrajendrabehare/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/nileshrajendrabehare/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/nileshrajendrabehare/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-testng/2.27.0/allure-testng-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-java-commons/2.27.0/allure-java-commons-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-model/2.27.0/allure-model-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-test-filter/2.27.0/allure-test-filter-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/github/cdimascio/java-dotenv/5.2.2/java-dotenv-5.2.2.jar:/Users/nileshrajendrabehare/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.4.0/kotlin-stdlib-1.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.0/kotlin-stdlib-common-1.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/opencsv/opencsv/5.9/opencsv-5.9.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/Users/nileshrajendrabehare/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/nileshrajendrabehare/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
@@ -13,9 +13,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/surefire/surefirebooter-20260515182412081_3.jar /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/surefire 2026-05-15T18-24-12_022-jvmRun1 surefire-20260515182412081_1tmp surefire_0-20260515182412081_2tmp"/>
+    <property name="sun.java.command" value="/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/surefire/surefirebooter-20260519123817251_3.jar /Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/surefire 2026-05-19T12-38-17_192-jvmRun1 surefire-20260519123817251_1tmp surefire_0-20260519123817251_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/test-classes:/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/classes:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/nileshrajendrabehare/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/nileshrajendrabehare/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/nileshrajendrabehare/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/nileshrajendrabehare/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/nileshrajendrabehare/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/nileshrajendrabehare/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/nileshrajendrabehare/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/json-schema-validator/5.3.0/json-schema-validator-5.3.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/nileshrajendrabehare/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/nileshrajendrabehare/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/nileshrajendrabehare/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/nileshrajendrabehare/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/nileshrajendrabehare/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/nileshrajendrabehare/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-testng/2.27.0/allure-testng-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-java-commons/2.27.0/allure-java-commons-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-model/2.27.0/allure-model-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-test-filter/2.27.0/allure-test-filter-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/opencsv/opencsv/5.9/opencsv-5.9.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/Users/nileshrajendrabehare/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/nileshrajendrabehare/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/test-classes:/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/classes:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/nileshrajendrabehare/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/nileshrajendrabehare/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/nileshrajendrabehare/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/nileshrajendrabehare/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/nileshrajendrabehare/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/nileshrajendrabehare/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/nileshrajendrabehare/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/nileshrajendrabehare/.m2/repository/io/rest-assured/json-schema-validator/5.3.0/json-schema-validator-5.3.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/nileshrajendrabehare/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/nileshrajendrabehare/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/nileshrajendrabehare/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/nileshrajendrabehare/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/nileshrajendrabehare/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/nileshrajendrabehare/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/nileshrajendrabehare/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/nileshrajendrabehare/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/Users/nileshrajendrabehare/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-testng/2.27.0/allure-testng-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-java-commons/2.27.0/allure-java-commons-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-model/2.27.0/allure-model-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/qameta/allure/allure-test-filter/2.27.0/allure-test-filter-2.27.0.jar:/Users/nileshrajendrabehare/.m2/repository/io/github/cdimascio/java-dotenv/5.2.2/java-dotenv-5.2.2.jar:/Users/nileshrajendrabehare/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.4.0/kotlin-stdlib-1.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.0/kotlin-stdlib-common-1.4.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/nileshrajendrabehare/.m2/repository/com/opencsv/opencsv/5.9/opencsv-5.9.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/Users/nileshrajendrabehare/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/nileshrajendrabehare/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/nileshrajendrabehare/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/nileshrajendrabehare"/>
     <property name="user.language" value="en"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/surefire/surefirebooter-20260515182412081_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/target/surefire/surefirebooter-20260519123817251_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="20.0.2+9-78"/>
     <property name="user.name" value="nileshrajendrabehare"/>
@@ -56,13 +56,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="64.0"/>
   </properties>
-  <testcase name="Postlist" classname="com.myproject.tests.DataDrivenTest" time="13.951">
-    <system-out><![CDATA[18:24:12.727 [main] DEBUG org.testng.TestNG -- suiteXmlPath: "/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/testng.xml"
-Running on Environment: qa
+  <testcase name="Postlist" classname="com.myproject.tests.DataDrivenTest" time="13.425">
+    <system-out><![CDATA[12:38:17.906 [main] DEBUG org.testng.TestNG -- suiteXmlPath: "/Users/nileshrajendrabehare/Documents/API_RestAssured/restassured-project/testng.xml"
+Loading Environment File: .env.qa
 Loaded Environment: qa
-Generated Token: 1778849658901
+BASE_URL => https://petstore.swagger.io/v2
+Generated Token: 1779174508035
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:54:26 GMT
+Date: Tue, 19 May 2026 07:08:35 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -77,7 +78,7 @@ Server: Jetty(9.2.9.v20150224)
     "message": "ok"
 }
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:54:27 GMT
+Date: Tue, 19 May 2026 07:08:36 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -95,7 +96,7 @@ Server: Jetty(9.2.9.v20150224)
 }
 ACTUAL USERNAME: BCA321
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:54:29 GMT
+Date: Tue, 19 May 2026 07:08:37 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -110,7 +111,7 @@ Server: Jetty(9.2.9.v20150224)
     "message": "ok"
 }
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:54:30 GMT
+Date: Tue, 19 May 2026 07:08:39 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -128,7 +129,7 @@ Server: Jetty(9.2.9.v20150224)
 }
 ACTUAL USERNAME: BCA321
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:54:31 GMT
+Date: Tue, 19 May 2026 07:08:40 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -143,7 +144,7 @@ Server: Jetty(9.2.9.v20150224)
     "message": "ok"
 }
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:54:33 GMT
+Date: Tue, 19 May 2026 07:08:41 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -162,12 +163,14 @@ Server: Jetty(9.2.9.v20150224)
 ACTUAL USERNAME: BCA321
 ]]></system-out>
   </testcase>
-  <testcase name="updateUser" classname="com.myproject.tests.DataDrivenTest" time="10.899">
-    <system-out><![CDATA[Running on Environment: qa
-Generated Token: 1778849674671
-Updated USERNAME : Random1778849679821
+  <testcase name="updateUser" classname="com.myproject.tests.DataDrivenTest" time="10.322">
+    <system-out><![CDATA[Loading Environment File: .env.qa
+Loaded Environment: qa
+BASE_URL => https://petstore.swagger.io/v2
+Generated Token: 1779174523262
+Updated USERNAME : Random1779174528406
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:54:41 GMT
+Date: Tue, 19 May 2026 07:08:49 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -179,11 +182,11 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "9223372036854765195"
+    "message": "9223372036854754760"
 }
 User updated successfully
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:54:42 GMT
+Date: Tue, 19 May 2026 07:08:50 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -193,13 +196,13 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 9223372036854765195,
-    "username": "Random1778849679821",
+    "id": 9223372036854754760,
+    "username": "Random1779174528406",
     "userStatus": 0
 }
 User is Succesfully Deleted
 HTTP/1.1 404 Not Found
-Date: Fri, 15 May 2026 12:54:45 GMT
+Date: Tue, 19 May 2026 07:08:53 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -216,11 +219,13 @@ Server: Jetty(9.2.9.v20150224)
 User Not Found
 ]]></system-out>
   </testcase>
-  <testcase name="Postlist[{firstName=Dew, lastName=Nser, password=Dew123, userStatus=19, phone=944365373, id=190, email=Dew19@test.com, username=user19}](1)" classname="com.myproject.tests.DataproviderTest" time="7.911">
-    <system-out><![CDATA[Running on Environment: qa
-Generated Token: 1778849687144
+  <testcase name="Postlist[{firstName=Dew, lastName=Nser, password=Dew123, userStatus=19, phone=944365373, id=190, email=Dew19@test.com, username=user19}](1)" classname="com.myproject.tests.DataproviderTest" time="7.65">
+    <system-out><![CDATA[Loading Environment File: .env.qa
+Loaded Environment: qa
+BASE_URL => https://petstore.swagger.io/v2
+Generated Token: 1779174534918
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:54:53 GMT
+Date: Tue, 19 May 2026 07:09:01 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -235,7 +240,7 @@ Server: Jetty(9.2.9.v20150224)
     "message": "ok"
 }
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:54:55 GMT
+Date: Tue, 19 May 2026 07:09:02 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -257,11 +262,13 @@ Server: Jetty(9.2.9.v20150224)
 USERNAME : user19
 ]]></system-out>
   </testcase>
-  <testcase name="Postlist[{firstName=Net, lastName=Tester, password=Net123, userStatus=20, phone=942435374, id=191, email=Net20@test.com, username=user20}](2)" classname="com.myproject.tests.DataproviderTest" time="2.841">
-    <system-out><![CDATA[Running on Environment: qa
-Generated Token: 1778849696567
+  <testcase name="Postlist[{firstName=Net, lastName=Tester, password=Net123, userStatus=20, phone=942435374, id=191, email=Net20@test.com, username=user20}](2)" classname="com.myproject.tests.DataproviderTest" time="2.702">
+    <system-out><![CDATA[Loading Environment File: .env.qa
+Loaded Environment: qa
+BASE_URL => https://petstore.swagger.io/v2
+Generated Token: 1779174543895
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:54:58 GMT
+Date: Tue, 19 May 2026 07:09:05 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -276,7 +283,7 @@ Server: Jetty(9.2.9.v20150224)
     "message": "ok"
 }
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:54:59 GMT
+Date: Tue, 19 May 2026 07:09:06 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -298,11 +305,13 @@ Server: Jetty(9.2.9.v20150224)
 USERNAME : user20
 ]]></system-out>
   </testcase>
-  <testcase name="Postlist[{firstName=dummy, lastName=Tester, password=dummy123, userStatus=21, phone=9426835375, id=192, email=dummy21@test.com, username=user21}](3)" classname="com.myproject.tests.DataproviderTest" time="7.898">
-    <system-out><![CDATA[Running on Environment: qa
-Generated Token: 1778849700864
+  <testcase name="Postlist[{firstName=dummy, lastName=Tester, password=dummy123, userStatus=21, phone=9426835375, id=192, email=dummy21@test.com, username=user21}](3)" classname="com.myproject.tests.DataproviderTest" time="7.606">
+    <system-out><![CDATA[Loading Environment File: .env.qa
+Loaded Environment: qa
+BASE_URL => https://petstore.swagger.io/v2
+Generated Token: 1779174547920
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:55:07 GMT
+Date: Tue, 19 May 2026 07:09:14 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -317,7 +326,7 @@ Server: Jetty(9.2.9.v20150224)
     "message": "ok"
 }
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:55:08 GMT
+Date: Tue, 19 May 2026 07:09:15 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -339,12 +348,14 @@ Server: Jetty(9.2.9.v20150224)
 USERNAME : user21
 ]]></system-out>
   </testcase>
-  <testcase name="updateUser" classname="com.myproject.tests.DataproviderTest" time="5.734">
-    <system-out><![CDATA[Running on Environment: qa
-Generated Token: 1778849710291
-Updated USERNAME : Random1778849710478
+  <testcase name="updateUser" classname="com.myproject.tests.DataproviderTest" time="5.306">
+    <system-out><![CDATA[Loading Environment File: .env.qa
+Loaded Environment: qa
+BASE_URL => https://petstore.swagger.io/v2
+Generated Token: 1779174556858
+Updated USERNAME : Random1779174557006
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:55:11 GMT
+Date: Tue, 19 May 2026 07:09:18 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -356,11 +367,11 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "9223372036854765200"
+    "message": "9223372036854754760"
 }
 User updated successfully
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:55:13 GMT
+Date: Tue, 19 May 2026 07:09:19 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -370,13 +381,13 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 9223372036854765200,
-    "username": "Random1778849710478",
+    "id": 9223372036854754760,
+    "username": "Random1779174557006",
     "userStatus": 0
 }
 User is Succesfully Deleted
 HTTP/1.1 404 Not Found
-Date: Fri, 15 May 2026 12:55:16 GMT
+Date: Tue, 19 May 2026 07:09:22 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -393,15 +404,17 @@ Server: Jetty(9.2.9.v20150224)
 User Not Found
 ]]></system-out>
   </testcase>
-  <testcase name="Postlist" classname="com.myproject.tests.NegativeScenarioTest" time="15.08">
-    <system-out><![CDATA[Running on Environment: qa
-Generated Token: 1778849717506
+  <testcase name="Postlist" classname="com.myproject.tests.NegativeScenarioTest" time="14.185">
+    <system-out><![CDATA[Loading Environment File: .env.qa
+Loaded Environment: qa
+BASE_URL => https://petstore.swagger.io/v2
+Generated Token: 1779174563481
 POST Success for: ABC123
 POST Success for: BCA321
 POST Success for: CBA111
 Negative Username: 63637
 HTTP/1.1 404 Not Found
-Date: Fri, 15 May 2026 12:55:28 GMT
+Date: Tue, 19 May 2026 07:09:33 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -418,7 +431,7 @@ Server: Jetty(9.2.9.v20150224)
 GET Negative validated for: 63637
 Negative Username: 36373
 HTTP/1.1 404 Not Found
-Date: Fri, 15 May 2026 12:55:30 GMT
+Date: Tue, 19 May 2026 07:09:35 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -435,7 +448,7 @@ Server: Jetty(9.2.9.v20150224)
 GET Negative validated for: 36373
 Negative Username: 35367
 HTTP/1.1 404 Not Found
-Date: Fri, 15 May 2026 12:55:31 GMT
+Date: Tue, 19 May 2026 07:09:36 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -452,7 +465,7 @@ Server: Jetty(9.2.9.v20150224)
 GET Negative validated for: 35367
 Negative Username: 552829
 HTTP/1.1 404 Not Found
-Date: Fri, 15 May 2026 12:55:32 GMT
+Date: Tue, 19 May 2026 07:09:37 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -469,12 +482,14 @@ Server: Jetty(9.2.9.v20150224)
 GET Negative validated for: 552829
 ]]></system-out>
   </testcase>
-  <testcase name="updateUser" classname="com.myproject.tests.NegativeScenarioTest" time="12.038">
-    <system-out><![CDATA[Running on Environment: qa
-Generated Token: 1778849733938
-Updated USERNAME : Random1778849739090
+  <testcase name="updateUser" classname="com.myproject.tests.NegativeScenarioTest" time="11.612">
+    <system-out><![CDATA[Loading Environment File: .env.qa
+Loaded Environment: qa
+BASE_URL => https://petstore.swagger.io/v2
+Generated Token: 1779174578970
+Updated USERNAME : Random1779174584111
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:55:40 GMT
+Date: Tue, 19 May 2026 07:09:45 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -486,11 +501,11 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "9223372036854765202"
+    "message": "9223372036854754760"
 }
 User updated successfully
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:55:41 GMT
+Date: Tue, 19 May 2026 07:09:46 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -500,13 +515,13 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 9223372036854765202,
-    "username": "Random1778849739090",
+    "id": 9223372036854754760,
+    "username": "Random1779174584111",
     "userStatus": 0
 }
 User is Succesfully Deleted
 HTTP/1.1 404 Not Found
-Date: Fri, 15 May 2026 12:55:44 GMT
+Date: Tue, 19 May 2026 07:09:49 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -524,11 +539,13 @@ User Not Found
 User is Not Found for Deletion
 ]]></system-out>
   </testcase>
-  <testcase name="Postlist" classname="com.myproject.tests.UserOperation" time="11.785">
-    <system-out><![CDATA[Running on Environment: qa
-Generated Token: 1778849747308
+  <testcase name="Postlist" classname="com.myproject.tests.UserOperation" time="7.643">
+    <system-out><![CDATA[Loading Environment File: .env.qa
+Loaded Environment: qa
+BASE_URL => https://petstore.swagger.io/v2
+Generated Token: 1779174591932
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:55:53 GMT
+Date: Tue, 19 May 2026 07:09:58 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -546,7 +563,7 @@ UserID : null
 Headers validated successfully
 No cookies found
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:55:59 GMT
+Date: Tue, 19 May 2026 07:09:59 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -568,12 +585,14 @@ Server: Jetty(9.2.9.v20150224)
 USERNAME : user34
 ]]></system-out>
   </testcase>
-  <testcase name="updateUser" classname="com.myproject.tests.UserOperation" time="10.537">
-    <system-out><![CDATA[Running on Environment: qa
-Generated Token: 1778849760561
-Updated USERNAME : Random1778849765704
+  <testcase name="updateUser" classname="com.myproject.tests.UserOperation" time="8.617">
+    <system-out><![CDATA[Loading Environment File: .env.qa
+Loaded Environment: qa
+BASE_URL => https://petstore.swagger.io/v2
+Generated Token: 1779174600919
+Updated USERNAME : Random1779174601055
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:56:06 GMT
+Date: Tue, 19 May 2026 07:10:02 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -585,11 +604,11 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "9223372036854765205"
+    "message": "9223372036854754760"
 }
 User updated successfully
 HTTP/1.1 200 OK
-Date: Fri, 15 May 2026 12:56:08 GMT
+Date: Tue, 19 May 2026 07:10:06 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -599,13 +618,175 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 9223372036854765205,
-    "username": "Random1778849765704",
+    "id": 9223372036854754760,
+    "username": "Random1779174601055",
     "userStatus": 0
 }
 User is Succesfully Deleted
 HTTP/1.1 404 Not Found
-Date: Fri, 15 May 2026 12:56:11 GMT
+Date: Tue, 19 May 2026 07:10:09 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+User Not Found
+]]></system-out>
+  </testcase>
+  <testcase name="Postlist" classname="com.myproject.tests.PojoTest" time="13.297">
+    <system-out><![CDATA[Loading Environment File: .env.qa
+Loaded Environment: qa
+BASE_URL => https://petstore.swagger.io/v2
+Generated Token: 1779174610858
+HTTP/1.1 200 OK
+Date: Tue, 19 May 2026 07:10:17 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "ok"
+}
+HTTP/1.1 200 OK
+Date: Tue, 19 May 2026 07:10:18 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 34,
+    "username": "ABC123",
+    "email": "random123@gamil.com",
+    "password": "Random@123",
+    "userStatus": 23
+}
+ACTUAL USERNAME: ABC123
+HTTP/1.1 200 OK
+Date: Tue, 19 May 2026 07:10:20 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "ok"
+}
+HTTP/1.1 200 OK
+Date: Tue, 19 May 2026 07:10:21 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 35,
+    "username": "BCA321",
+    "email": "test456@gmail.com",
+    "password": "Test@456",
+    "userStatus": 56
+}
+ACTUAL USERNAME: BCA321
+HTTP/1.1 200 OK
+Date: Tue, 19 May 2026 07:10:22 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "ok"
+}
+HTTP/1.1 200 OK
+Date: Tue, 19 May 2026 07:10:24 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 36,
+    "username": "CBA111",
+    "email": "new984@gmail.com",
+    "password": "New@984",
+    "userStatus": 84
+}
+ACTUAL USERNAME: CBA111
+]]></system-out>
+  </testcase>
+  <testcase name="updateUser" classname="com.myproject.tests.PojoTest" time="10.252">
+    <system-out><![CDATA[Loading Environment File: .env.qa
+Loaded Environment: qa
+BASE_URL => https://petstore.swagger.io/v2
+Generated Token: 1779174625457
+Updated USERNAME : Random1779174630593
+HTTP/1.1 200 OK
+Date: Tue, 19 May 2026 07:10:31 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "9223372036854754760"
+}
+User updated successfully
+HTTP/1.1 200 OK
+Date: Tue, 19 May 2026 07:10:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 9223372036854754760,
+    "username": "Random1779174630593",
+    "userStatus": 0
+}
+User is Succesfully Deleted
+HTTP/1.1 404 Not Found
+Date: Tue, 19 May 2026 07:10:35 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
