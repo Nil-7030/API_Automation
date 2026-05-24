@@ -21,7 +21,7 @@ public class EnvManager {
             }
 
             String filePath = System.getProperty("user.dir") + "/env/.env."  + env;
-            System.out.println("Loading Environment File: .env." + env);
+            System.out.println("Loading Environment File: .env."+ env);
             BufferedReader br = new BufferedReader(new FileReader(filePath));
 
             String line;

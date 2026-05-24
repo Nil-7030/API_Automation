@@ -3,7 +3,6 @@ package com.myproject.tests;
 import com.myproject.base.BaseClass;
 import com.myproject.endpoints.Endpoints;
 import com.myproject.utils.CsvReader;
-import com.myproject.utils.DataProviderSetup;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import io.restassured.response.Response;
 
